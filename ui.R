@@ -11,8 +11,9 @@ shinyUI(pageWithSidebar( headerPanel("Daily air quality measurements in New York
   ),
    
   mainPanel( 
-            p('This shiny application lets you select a factor and a month from the airquality dataset and make an
-               histogram for the selected factor and month, in addition you can select the histogram color'),
+            p('This shiny application lets you select a factor and a month from the airquality dataset included in R and make an
+               histogram of the measures observed for the selected factor in the selected month.'),
+            p ('In addition you can select the histogram color.'),
             p('Once you select the desired factor, month and color, press the submit button to see the graph'),
             plotOutput('newHist')
     
